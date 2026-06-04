@@ -8,17 +8,39 @@ body {
     color: #000000;
     font-family: "Helvetica Neue", Arial, sans-serif;
     text-transform: uppercase;
+    text-align: center; 
 }
 
 .content { 
     background: #6be8c1;
     margin: 30px, 100px, 40px; 
-    
+    justify-content: space-between;
+    text-decoration: none; 
+    color: #000000;
+    padding: 1px 20px;
+    font-size: 1.1 rem;
+    font-weight: 500;
+    border: 10px solid #000000;
+    border-radius: 12px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; 
 }
 
+
+
 p { 
-    margin: 30px 
+    margin: 30px; 
+    background: #ffffff;
+    text-decoration: none; 
+    color: #000000;
+    padding: 1px 16px;
+    font-size: 1.1 rem;
+    font-weight: 700;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; 
+    text-align: center 
 }
+
 
 #all-contents {
     max-width: 1500px;
@@ -82,16 +104,17 @@ content > p {
     letter-spacing: 0.2em;
     color: #0b0000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #6be8c1
+    background-color: #6be8c1; 
+    align-items: center; 
 }
 
 #interests ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 12px;
     display: flex;
-    flex-wrap: wrap; 
-    gap: 8px;
+    flex-wrap: wrap-reverse; 
+    gap: 10px;
 }
 
 #interests li {
@@ -99,12 +122,14 @@ content > p {
     font-size: 1rem; 
     font-weight: 600;
     padding: 10px 20px;
-    background: #6be8c1;
-    border: 1px solid #a00909;
+    background: #ffffff;
+    border: 5px solid #48ffd4;
     border-radius: 100px;
     transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; 
     cursor: defalut;
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    align-items: center;
 }
 
 #interests li:hover {
@@ -116,17 +141,16 @@ content > p {
 
 .sidebar-img {
     width: 100%;
-    max-width: 760px;
     aspect-ratio: 3 / 4; 
     object-fit: calc(30); 
-    display: block; 
-    border-radius: 30px;
+    display: flex; 
+    border-radius: 20px;
     filter: grayscale(100%);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px rgba(199, 40, 40, 0.12);
     transition: filter 0.4s ease, transform 0.4s ease, 
 box-shadow 0.4s ease;
-    border-style: dashed; 
-    border-color: aqua;  
+    border-style: groove; 
+    border: 8px, solid, aqua;   
 }
 
 .sidebar-img:hover {
@@ -142,90 +166,176 @@ nav {
     margin-bottom:48px;
     padding: 16px 24px;
     background: #6be8c1;
-    border: 1px soild #a00909;
-    border-radius: 12px;
+    border: 6px, groove, black;
+    border-radius: 10px;
 }
 
 nav h1 {
     margin: 0; 
-    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase; 
-    letter-spacing: 0.2em;
+    letter-spacing: 6px;
     color:#000; 
+    font-size: 16px; 
+    text-align: center;
 }
 
+
 #nav-ul {
-    list-style: square;
+    list-style: none;
     display: flex;
-    gap: 8px;
-    margin: 20px;
-    padding: 10px;
+    gap: 10px;
+    margin: 23px;
+    padding: 20px;
 }
 
 .nav-li a {
     color: #000000;
     text-decoration: none;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 7px;
     padding: 6px 14px;
     border-radius: 8px;
     transition: background 0.25s ease, color 0.25s ease;
+    background: white; 
+    border: 4px, solid, #48ffd4; 
 }
 
 .nav-li a:hover {
     background: #e94560; 
     color: #daea6f;
+    border-color: black; 
 }
 
 /* Portfolio styles */
 .content h1 {
-    color: black; 
+    color: rgb(0, 0, 0); 
+    margin: 50px;
+    background: rgb(253, 55, 55); 
+    align-items: center;
+    text-decoration: none; 
+    color: #000000;
+    padding: 2px 20px;
+    font-size: 1.1 rem;
+    font-weight: 500;
+    background: #ffffff;
+    border: 5px solid #000000;
+    border-radius: 12px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; 
+    margin: 10px, 20px, 15px;
+}
+
+h1 { 
+    text-align: center; 
+    border: 5px;
+}
+
+h3 {
+    margin: 50px;
 }
 
 #portfolio { 
     list-style: none;
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    margin-right:40px;
+    margin-left: 50px;
+    margin: 50px;
     padding: 0; 
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px; 
+    gap: 10px; 
 }
 
 #portfolio li {
-    border-radius: 12px;
+    border-radius: 15px;
     overflow: hidden;
 }
+
+
 #portfolio a { 
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none; 
-    color: #444;
+    color: #000000;
     padding: 16px 20px;
-    font-size: 1.1rem;
+    font-size: 1.1 rem;
     font-weight: 500;
-    background: #fff;
-    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    border: 5px solid #000000;
     border-radius: 12px;
     transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    text-align: center;
+    position: relative; 
+    margin: 10px, 20px, 15px; 
 }
 
 #portfolio a:hover {
-    background: #000;
-    color: #fff; 
+    background: #e94560;
+    color: #daea6f; 
     transform: translateX(4px); 
+}
+
+#portfolio a::before { 
+    content: "|"
 }
 
 #portfolio a::after {
     content: "-->";
     font-size: 0.85rem;
-    opacity: 0.4;
+    opacity: 0.7;
     transition: opacity 0.25s ease; 
     white-space: nowrap;
 }
 
 #portfolio a:hover::after { 
     opacity: 1;
+}
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+    main {
+        height: 100ch;
+        zoom: 1.5;
+        display: grid;
+    }
+    h1 {
+        font-size: 44px; 
+    }
+
+    h2 { 
+        font-size: 42px;
+    }
+
+    h3 { 
+        font-size: 36px;
+    }
+
+    #all-contents {
+        height: 100ch;
+        margin: none;
+    }
+
+    a {
+        font-size: 42px;
+    }
+
+    .sidebar {
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p,
+    li {
+        font-size: 24px;
+    }
+
+    .content { 
+        align-content: center;
+        justify-content: center;
+    }
 }
