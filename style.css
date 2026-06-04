@@ -126,7 +126,7 @@ content > p {
     transition: filter 0.4s ease, transform 0.4s ease, 
 box-shadow 0.4s ease;
     border-style: dashed; 
-    border-color: orange;  
+    border-color: aqua;  
 }
 
 .sidebar-img:hover {
