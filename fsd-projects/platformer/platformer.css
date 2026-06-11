@@ -1,10 +1,14 @@
 body {
-  margin: 0px;
+  margin: 100px;
+  margin-right: 500px
 }
 
 canvas {
-  background-color:lightblue;
-  margin: 20px;
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDw98-jTUOUFMe_LyGQ837lLnEHQCGElpWv-ERHAdQoBpdt-eWwqZop8Y&s=10); 
+  margin: 200px;
+  margin-right: 700px;
+  border: 40px, groove, blue; 
+  align-items: center
 }
 
 img {

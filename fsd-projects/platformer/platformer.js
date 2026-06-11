@@ -27,7 +27,8 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid(); 
+    ///toggleGrid(); 
+    
     
 
 

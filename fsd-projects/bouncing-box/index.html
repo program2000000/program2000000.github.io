@@ -6,17 +6,20 @@
     <script src="jquery.min.js"></script>
     <style>
       .box {
-        width: 70px;
+        width: 100px;
         height: 70px;
         background-color: rgb(255, 255, 0);
         font-size: 300%;
+        font-family: fantasy;
         text-align: center;
         user-select: none;
         display: block;
         position: absolute;
-        top: 100px;
+        top: 500px;
         /* Change me! */
-        left: 0px;
+        left: 100px;
+        border: 5px, dashed, red; 
+        
       }
 
       .board {
@@ -57,7 +60,6 @@
         // moves the Box to a new position on the screen along the X-Axis
         function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
-          box.css("top")
         }
 
         // changes the text displayed on the Box
@@ -73,8 +75,11 @@
         var positionX = 0; 
         var points = 0; 
         var speed = 10; 
-        var positionY; 
-        var speedY; 
+      
+       
+        
+       
+       
 
 
 
@@ -115,12 +120,13 @@
           changeBoxText(points); 
           points = points + 1; 
           speed = 3 * points + 10; 
-          
-
-
-
-
+           getRandomColor() 
+           colorStr = box.css
         }
+        
+
+        
+        
 
 
         
