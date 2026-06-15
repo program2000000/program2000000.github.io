@@ -22,6 +22,7 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle; // variable to hold a single circle when creating circles / iterating 
         var circles = []; // variable to store all circles in an array 
+        
 
 
 
@@ -97,8 +98,23 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
-            
+
+           
+
+           
+            if (circle.y > canvas.height) {
+                circle.y < 0;
+            }
+
+            if (circle.y < canvas.height) {
+            circle.y > 0 
+
+           }
+
+           
+
+           
+             
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
