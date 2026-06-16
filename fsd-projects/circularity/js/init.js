@@ -20,9 +20,8 @@ var init = function (window) {
         ///////////////////
         
         // TODO 1 : Declare and initialize our variables
-        var circle; // variable to hold a single circle when creating circles / iterating 
-        var circles = []; // variable to store all circles in an array 
-        
+        var circle; 
+        var circles = []; 
 
 
 
@@ -39,14 +38,17 @@ var init = function (window) {
 
         // TODO 3 : Call the drawCircle() function
         drawCircle(); 
-        drawCircle(); 
-        drawCircle(); 
-        drawCircle(); 
-        drawCircle(); 
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        
+        
 
 
 
         // TODO 7 : Use a loop to create multiple circles
+        
 
 
 
@@ -71,11 +73,11 @@ var init = function (window) {
 
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
-            game.checkCirclePosition(circles[0]);
-            game.checkCirclePosition(circles[1]);
-            game.checkCirclePosition(circles[2]);
-            game.checkCirclePosition(circles[3]);
-            game.checkCirclePosition(circles[4]);
+            game.checkCirclePosition(circles [0]);
+            game.checkCirclePosition(circles [1]);
+            game.checkCirclePosition(circles [2]);
+            game.checkCirclePosition(circles [3]);
+            game.checkCirclePosition(circles [4]);
             
 
            
@@ -99,17 +101,26 @@ var init = function (window) {
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
 
-           
-
-           
-            if (circle.y > canvas.height) {
-                circle.y < 0;
-            }
-
-            if (circle.y < canvas.height) {
-            circle.y > 0 
-
+           if (circle.x < 0) {
+            circle.x = canvas.width
            }
+
+           if (circle.y < 0) {
+            circle.y = canvas.height
+           }
+
+           if (circle.y > canvas.height) {
+            circle.y = 0 
+           }
+            
+
+           
+
+
+            
+             
+            
+            
 
            
 
