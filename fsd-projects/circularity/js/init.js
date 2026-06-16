@@ -32,7 +32,10 @@ var init = function (window) {
             physikz.addRandomVelocity(circle, canvas, 5, 5);
             view.addChild(circle);
             circles.push(circle);
+
+            
         }
+        
         
         
 
@@ -78,8 +81,11 @@ var init = function (window) {
             physikz.updatePosition(circles[i]);
             game.checkCirclePosition(circles[i]);
 
+            
+
            }
             
+           
         }
     
         /* 
@@ -108,19 +114,6 @@ var init = function (window) {
             circle.y = 0 
            }
             
-
-           
-
-
-            
-             
-            
-            
-
-           
-
-           
-             
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
